@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="lottie"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        const animationData = "./42321-santa-surprise-gift.json";
+        
+        const animation = bodymovin.loadAnimation({
+            container: document.getElementById('lottie'), // Required
+            path: animationData, // Required
+            renderer: 'svg', // Required
+            loop: true, // Optional
+            autoplay: true, // Optional
+        })
+    </script>
+</body>
+</html>
